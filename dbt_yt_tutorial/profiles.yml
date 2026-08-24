@@ -1,0 +1,13 @@
+dbt_yt_tutorial:
+  outputs:
+    dev:
+      account: gqptxat-cs16293
+      database: DBT_TUTORIAL_DEV
+      password: bernAhimatnagar@9699
+      role: ACCOUNTADMIN
+      schema: DEFAULT
+      threads: 1
+      type: snowflake
+      user: AVINASH
+      warehouse: COMPUTE_WH
+  target: dev
