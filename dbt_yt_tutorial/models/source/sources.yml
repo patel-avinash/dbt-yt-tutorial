@@ -9,3 +9,4 @@ sources:
       - name: dim_date
       - name: fact_return
       - name: fact_sales
+      - name : items
