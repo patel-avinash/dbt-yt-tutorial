@@ -6,12 +6,21 @@ on:
       - main
 
 jobs:
-  test:
+  dbt:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Test GitHub Actions
-        run: echo "DBT CI pipeline started successfully!"
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dbt
+        run: |
+          pip install -r requirements.txt
+
+      - name: Check dbt version
+        run: dbt --version
