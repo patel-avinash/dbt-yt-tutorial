@@ -10,4 +10,15 @@ dbt_yt_tutorial:
       type: snowflake
       user: AVINASH
       warehouse: COMPUTE_WH
+    prod:
+      account: gqptxat-cs16293
+      database: DBT_TUTORIAL_prod
+      password: bernAhimatnagar@9699
+      role: ACCOUNTADMIN
+      schema: DEFAULT
+      threads: 1
+      type: snowflake
+      user: AVINASH
+      warehouse: COMPUTE_WH
+
   target: dev
