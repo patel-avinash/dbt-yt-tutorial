@@ -34,5 +34,5 @@ jobs:
         working-directory: dbt_yt_tutorial
         run: |
           dbt build \
-            --target prod \
+            --target dev \
             --profiles-dir ../.github/dbt
