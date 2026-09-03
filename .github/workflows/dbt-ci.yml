@@ -30,9 +30,9 @@ jobs:
       - name: Check dbt version
         run: dbt --version
 
-      - name: Test Snowflake connection
+      - name: Build dbt project
         working-directory: dbt_yt_tutorial
         run: |
-          dbt debug \
+          dbt build \
             --target prod \
             --profiles-dir ../.github/dbt
